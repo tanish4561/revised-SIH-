@@ -1,0 +1,46 @@
+Game Mechanics/ Flow:-
+
+1) There will two roles: a) Rescuer b) Chemical Expert
+   a) Rescuer Goals:-
+     i) Get the affected personnel to the cold zone 
+     ii) Decontaminate/ treat these individuals
+   b) Chemical experts:-
+     i) Locate the cold zone and Detect the type of gas
+     ii) Deploy the containment devices to prevent further spread of the gas
+
+2)Players will be assigned their roles after they enter the game
+
+3)PLayers will be spawned 100 to 200 meters away from the leakage site/factory
+
+4)The truck would contain the multigas detector to detect the lel% and O2 level. Players are required to measure the O2 levels and with regards to this choose an appropriate PPE suit
+   i) Suit A: hazmat without SCBA
+   ii) Suit B: hazmat with SCBA
+
+5)After finding out the lel and O2 reading the players are to finish the tasks assigned as per their role.
+----------------------------------------------------------------------------------------------------------
+Meterics for Evaluation which will be fed to the backend:-
+A) For Rescuer
+  1) no. of people successfully rescued
+  2) no. of people decontaminated
+  3) total time taken
+
+B) For Chemical Guy
+  1) Detect the correct type of the gas
+  2) Correct placement/use of containment equipment
+  3) total time taken
+
+----------------------------------------------------------------------------------------------------------
+
+Dashboard:-
+From the Dashboard (to the backend to the game)
+The admin on the dashboard will click a create session button
+- Then will have an option on the dashboard to select the number of players
+- and select what roles the players will have
+- then start the session
+-- this will send the session id to the backend along with the number of players (and their userids) and roles
+
+after entering this session id on the dashboard, they will obtain a invite link ingame to join the lobby
+
+After the game is completed 
+- The game sends a json to the backend with the metrics for evaluation
+- which the backend works on and sends to the dashboard 
